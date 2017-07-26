@@ -6,7 +6,7 @@
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging</RootNamespace>
 
     <PackageId>EnterpriseLibrary.ExceptionHandling.Logging.NetCore</PackageId>
-    <Title>Enterprise Library - Exception Handling Application Block Logging Handler .Net Core</Title>
+    <Title>Enterprise Library - Exception Handling Application Block Logging Handler for .Net Core</Title>
     <PackageVersion>6.0.1304</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>This exception handler lets you log formatted exception information in locations specified in the configuration file. This library contains a class library that targets .Net Core 2.0.</Description>

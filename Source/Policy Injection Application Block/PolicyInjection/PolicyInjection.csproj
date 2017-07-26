@@ -6,7 +6,7 @@
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.PolicyInjection</RootNamespace>
 
     <PackageId>EnterpriseLibrary.PolicyInjection.NetCore</PackageId>
-    <Title>Enterprise Library - Policy Injection Application Block .Net Core</Title>
+    <Title>Enterprise Library - Policy Injection Application Block for .Net Core</Title>
     <PackageVersion>6.0.1304</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The Enterprise Library Policy Injection Application Block can be used to change the behavior of any .NET objects, in order to better manage crosscutting concerns for these objects. The policy injection is implemented through the Unity interception mechanism. The package includes call handlers for Logging, Validation and Exception Handling. This library contains a class library that targets .Net Core 2.0.</Description>
