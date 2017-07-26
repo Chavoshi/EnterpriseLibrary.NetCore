@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Logging.Database</AssemblyName>
+    <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Logging.Database</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.0\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Common\Common.csproj" />
+    <ProjectReference Include="..\..\Data Access Application Block\Data\Data.csproj" />
+    <ProjectReference Include="..\Logging\Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Configuration\DesignResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DesignResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Configuration\DesignResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DesignResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(OutDir)*.*&quot; &quot;$(SolutionDir)..\Build\$(ConfigurationName)\&quot; /s /i /y /d" />
+  </Target>
+
+</Project>

@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26711.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1F8778F4-BAC4-4A09-92E7-CDACD74927A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Access Application Block", "Data Access Application Block", "{2264CC59-89FC-4941-9C98-ABB9618EB353}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exception Handling Application Block", "Exception Handling Application Block", "{46D673C0-B2D7-4A3E-9008-9DDF83E56F62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging Application Block", "Logging Application Block", "{97B4A3BB-2E3A-4276-A7F3-1300A0AD6D9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Policy Injection Application Block", "Policy Injection Application Block", "{3F2CCC78-3E72-4302-B593-F3A07292C6AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Validation Application Block", "Validation Application Block", "{40759178-A501-41B1-A77F-58BBB3BD1AAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Core\Common\Common.csproj", "{7C803680-0A4E-4D8D-A503-2B76293A765E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data Access Application Block\Data\Data.csproj", "{101D50C4-05A7-4E3B-B07C-219B4A46B60F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandling", "Exception Handling Application Block\ExceptionHandling\ExceptionHandling.csproj", "{63F0BA82-0678-4BBD-B23D-0B6CE92CD23E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging", "Logging Application Block\Logging\Logging.csproj", "{DD7DD57B-3C87-40DF-85F9-2294CB7594F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging.Database", "Logging Application Block\Logging.Database\Logging.Database.csproj", "{2E004D11-CF57-43FA-83E0-2FAA75293021}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandling.Logging", "Exception Handling Application Block\ExceptionHandling.Logging\ExceptionHandling.Logging.csproj", "{CFB09E2F-CE3D-43EA-B295-83735848201D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation", "Validation Application Block\Validation\Validation.csproj", "{B44DB72F-D831-4D2D-9E53-FE8D5D5F9B03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolicyInjection", "Policy Injection Application Block\PolicyInjection\PolicyInjection.csproj", "{0DB13E9D-1863-420F-B342-2B16CDEAE6EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C803680-0A4E-4D8D-A503-2B76293A765E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C803680-0A4E-4D8D-A503-2B76293A765E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C803680-0A4E-4D8D-A503-2B76293A765E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C803680-0A4E-4D8D-A503-2B76293A765E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{101D50C4-05A7-4E3B-B07C-219B4A46B60F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{101D50C4-05A7-4E3B-B07C-219B4A46B60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{101D50C4-05A7-4E3B-B07C-219B4A46B60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{101D50C4-05A7-4E3B-B07C-219B4A46B60F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63F0BA82-0678-4BBD-B23D-0B6CE92CD23E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F0BA82-0678-4BBD-B23D-0B6CE92CD23E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F0BA82-0678-4BBD-B23D-0B6CE92CD23E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F0BA82-0678-4BBD-B23D-0B6CE92CD23E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7DD57B-3C87-40DF-85F9-2294CB7594F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7DD57B-3C87-40DF-85F9-2294CB7594F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7DD57B-3C87-40DF-85F9-2294CB7594F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7DD57B-3C87-40DF-85F9-2294CB7594F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E004D11-CF57-43FA-83E0-2FAA75293021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E004D11-CF57-43FA-83E0-2FAA75293021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E004D11-CF57-43FA-83E0-2FAA75293021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E004D11-CF57-43FA-83E0-2FAA75293021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB09E2F-CE3D-43EA-B295-83735848201D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB09E2F-CE3D-43EA-B295-83735848201D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB09E2F-CE3D-43EA-B295-83735848201D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB09E2F-CE3D-43EA-B295-83735848201D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B44DB72F-D831-4D2D-9E53-FE8D5D5F9B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B44DB72F-D831-4D2D-9E53-FE8D5D5F9B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B44DB72F-D831-4D2D-9E53-FE8D5D5F9B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B44DB72F-D831-4D2D-9E53-FE8D5D5F9B03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB13E9D-1863-420F-B342-2B16CDEAE6EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB13E9D-1863-420F-B342-2B16CDEAE6EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB13E9D-1863-420F-B342-2B16CDEAE6EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB13E9D-1863-420F-B342-2B16CDEAE6EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C803680-0A4E-4D8D-A503-2B76293A765E} = {1F8778F4-BAC4-4A09-92E7-CDACD74927A2}
+		{101D50C4-05A7-4E3B-B07C-219B4A46B60F} = {2264CC59-89FC-4941-9C98-ABB9618EB353}
+		{63F0BA82-0678-4BBD-B23D-0B6CE92CD23E} = {46D673C0-B2D7-4A3E-9008-9DDF83E56F62}
+		{DD7DD57B-3C87-40DF-85F9-2294CB7594F1} = {97B4A3BB-2E3A-4276-A7F3-1300A0AD6D9D}
+		{2E004D11-CF57-43FA-83E0-2FAA75293021} = {97B4A3BB-2E3A-4276-A7F3-1300A0AD6D9D}
+		{CFB09E2F-CE3D-43EA-B295-83735848201D} = {46D673C0-B2D7-4A3E-9008-9DDF83E56F62}
+		{B44DB72F-D831-4D2D-9E53-FE8D5D5F9B03} = {40759178-A501-41B1-A77F-58BBB3BD1AAE}
+		{0DB13E9D-1863-420F-B342-2B16CDEAE6EE} = {3F2CCC78-3E72-4302-B593-F3A07292C6AD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D33D36F1-68F5-4C14-BBC4-32E07BACF8AE}
+	EndGlobalSection
+EndGlobal

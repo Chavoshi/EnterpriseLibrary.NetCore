@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging</AssemblyName>
+    <RootNamespace>Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging</RootNamespace>
+
+    <PackageId>EnterpriseLibrary.ExceptionHandling.Logging.NetCore</PackageId>
+    <Title>Enterprise Library - Exception Handling Application Block Logging Handler .Net Core</Title>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Mohammad Chavoshi</Authors>
+    <Description>This exception handler lets you log formatted exception information in locations specified in the configuration file. This library contains a class library that targets .Net Core 2.0.</Description>
+    <PackageTags>entlib entlib6 Enterprise Library exception ehab error management eab logging lab handler LOB NetCore</PackageTags>
+    <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
+    <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Common\Common.csproj" />
+    <ProjectReference Include="..\..\Logging Application Block\Logging\Logging.csproj" />
+    <ProjectReference Include="..\ExceptionHandling\ExceptionHandling.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Configuration\DesignResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DesignResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Configuration\DesignResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DesignResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(OutDir)*.*&quot; &quot;$(SolutionDir)..\Build\$(ConfigurationName)\&quot; /s /i /y /d" />
+  </Target>
+
+</Project>

@@ -1,0 +1,22 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Build/Release
+/Source/.vs/EnterpriseLibrary/v15
+/Source/Validation Application Block/Validation/obj
+/Source/Validation Application Block/Validation/bin
+/Source/Policy Injection Application Block/PolicyInjection/obj
+/Source/Policy Injection Application Block/PolicyInjection/bin
+/Source/Logging Application Block/Logging/obj
+/Source/Logging Application Block/Logging/bin
+/Source/Exception Handling Application Block/ExceptionHandling/obj
+/Source/Exception Handling Application Block/ExceptionHandling/bin
+/Source/Data Access Application Block/Data/obj
+/Source/Data Access Application Block/Data/bin
+/Source/Core/Common/obj
+/Source/Core/Common/bin
+/Source/Exception Handling Application Block/ExceptionHandling.Logging/obj
+/Source/Exception Handling Application Block/ExceptionHandling.Logging/bin
+/Source/Logging Application Block/Logging.Database/obj
+/Source/Logging Application Block/Logging.Database/bin
