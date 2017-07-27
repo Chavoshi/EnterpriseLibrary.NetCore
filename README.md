@@ -24,8 +24,5 @@ The design of application blocks encapsulates the Microsoft recommended and prov
 * [Exception Handling Application Block Logging Handler](https://www.nuget.org/packages/EnterpriseLibrary.ExceptionHandling.Logging.NetCore/)
 * [Validation Application Block](https://www.nuget.org/packages/EnterpriseLibrary.Validation.NetCore/)
 * [Policy Injection Application Block](https://www.nuget.org/packages/EnterpriseLibrary.Logging.Database)
-
-## Porting Libraries and Application Blocks to .Net Core 2.0:
-
-* Data Access Application Block
-* Logging Application Block Database Provider
+* [Data Access Application Block](https://www.nuget.org/packages/EnterpriseLibrary.Data.NetCore/)
+* [Logging Application Block Database Provider](https://www.nuget.org/packages/EnterpriseLibrary.Logging.Database.NetCore/)
