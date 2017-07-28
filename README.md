@@ -26,3 +26,7 @@ The design of application blocks encapsulates the Microsoft recommended and prov
 * [Policy Injection Application Block](https://www.nuget.org/packages/EnterpriseLibrary.Logging.Database)
 * [Data Access Application Block](https://www.nuget.org/packages/EnterpriseLibrary.Data.NetCore/)
 * [Logging Application Block Database Provider](https://www.nuget.org/packages/EnterpriseLibrary.Logging.Database.NetCore/)
+* [Cryptography Application Block (Enterprise Library 5.0)](https://www.nuget.org/packages/EnterpriseLibrary.Security.Cryptography/)
+* [Caching Application Block (Enterprise Library 5.0)](https://www.nuget.org/packages/EnterpriseLibrary.Caching.NetCore/)
+* [Caching Application Block Cryptography Provider (Enterprise Library 5.0)](https://www.nuget.org/packages/EnterpriseLibrary.Caching.Cryptography/)
+* [Caching Application Block Database Backing Store (Enterprise Library 5.0)](https://www.nuget.org/packages/EnterpriseLibrary.Caching.Database.NetCore/)
