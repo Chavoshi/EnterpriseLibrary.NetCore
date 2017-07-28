@@ -21,3 +21,12 @@
 /Source/Logging Application Block/Logging.Database/obj
 /Source/Logging Application Block/Logging.Database/bin
 /Build/Debug
+/Source/Caching Application Block/Caching/obj
+/Source/Caching Application Block/Caching/bin
+/Source/Caching Application Block/Caching.Cryptography/obj
+/Source/Caching Application Block/Caching.Cryptography/bin/Release
+/Source/Caching Application Block/Caching.Database/obj
+/Source/Caching Application Block/Caching.Database/bin/Release
+/Source/Cryptography Application Block/Security.Cryptography/obj
+/Source/Cryptography Application Block/Security.Cryptography/bin/Release
+*.user

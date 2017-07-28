@@ -173,6 +173,12 @@ namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design
             /// </summary>
             public const string RedirectedSectionSourceProperty = 
                 "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.RedirectedSectionSourceProperty, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
+
+            /// <summary>
+            /// Type name of the ManageableConfigurationSourceViewModel class, declared in the Configuration.DesignTime Assembly.
+            /// </summary>
+            public const string ManageableConfigurationSourceViewModel =
+                "Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ViewModel.BlockSpecifics.ManageableConfigurationSourceViewModel, Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime";
         }
 
         /// <summary>

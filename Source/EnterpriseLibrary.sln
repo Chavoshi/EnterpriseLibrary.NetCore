@@ -31,6 +31,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validation", "Validation Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolicyInjection", "Policy Injection Application Block\PolicyInjection\PolicyInjection.csproj", "{0DB13E9D-1863-420F-B342-2B16CDEAE6EE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Caching Application Block", "Caching Application Block", "{CDE9DAC4-B52B-466A-9915-B61641703D56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caching", "Caching Application Block\Caching\Caching.csproj", "{9D3DF3B1-7CF8-4021-9D0C-53A79FF9B56A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cryptography Application Block", "Cryptography Application Block", "{107DD84A-FF36-46CC-9C1E-7724B0453726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Cryptography", "Cryptography Application Block\Security.Cryptography\Security.Cryptography.csproj", "{D69C393D-D725-46E1-ADB0-4C37DB96E45B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caching.Cryptography", "Caching Application Block\Caching.Cryptography\Caching.Cryptography.csproj", "{B7BAB5C1-8089-4180-BF15-F13D8A8F3B51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caching.Database", "Caching Application Block\Caching.Database\Caching.Database.csproj", "{EBA392F8-54F1-4B25-AE24-54F2EC92E3C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +81,22 @@ Global
 		{0DB13E9D-1863-420F-B342-2B16CDEAE6EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DB13E9D-1863-420F-B342-2B16CDEAE6EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DB13E9D-1863-420F-B342-2B16CDEAE6EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D3DF3B1-7CF8-4021-9D0C-53A79FF9B56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3DF3B1-7CF8-4021-9D0C-53A79FF9B56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3DF3B1-7CF8-4021-9D0C-53A79FF9B56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3DF3B1-7CF8-4021-9D0C-53A79FF9B56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69C393D-D725-46E1-ADB0-4C37DB96E45B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69C393D-D725-46E1-ADB0-4C37DB96E45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69C393D-D725-46E1-ADB0-4C37DB96E45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69C393D-D725-46E1-ADB0-4C37DB96E45B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7BAB5C1-8089-4180-BF15-F13D8A8F3B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7BAB5C1-8089-4180-BF15-F13D8A8F3B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7BAB5C1-8089-4180-BF15-F13D8A8F3B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7BAB5C1-8089-4180-BF15-F13D8A8F3B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA392F8-54F1-4B25-AE24-54F2EC92E3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA392F8-54F1-4B25-AE24-54F2EC92E3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA392F8-54F1-4B25-AE24-54F2EC92E3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA392F8-54F1-4B25-AE24-54F2EC92E3C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,6 +110,10 @@ Global
 		{CFB09E2F-CE3D-43EA-B295-83735848201D} = {46D673C0-B2D7-4A3E-9008-9DDF83E56F62}
 		{B44DB72F-D831-4D2D-9E53-FE8D5D5F9B03} = {40759178-A501-41B1-A77F-58BBB3BD1AAE}
 		{0DB13E9D-1863-420F-B342-2B16CDEAE6EE} = {3F2CCC78-3E72-4302-B593-F3A07292C6AD}
+		{9D3DF3B1-7CF8-4021-9D0C-53A79FF9B56A} = {CDE9DAC4-B52B-466A-9915-B61641703D56}
+		{D69C393D-D725-46E1-ADB0-4C37DB96E45B} = {107DD84A-FF36-46CC-9C1E-7724B0453726}
+		{B7BAB5C1-8089-4180-BF15-F13D8A8F3B51} = {CDE9DAC4-B52B-466A-9915-B61641703D56}
+		{EBA392F8-54F1-4B25-AE24-54F2EC92E3C5} = {CDE9DAC4-B52B-466A-9915-B61641703D56}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D33D36F1-68F5-4C14-BBC4-32E07BACF8AE}

@@ -9,6 +9,7 @@
 // FITNESS FOR A PARTICULAR PURPOSE.
 //===============================================================================
 
+using Microsoft.Practices.ServiceLocation;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -22,6 +23,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
     public class ConfigurationSourceChangedEventArgs : EventArgs
     {
         private readonly IConfigurationSource configurationSource;
+        private readonly IServiceLocator container;
         private readonly ReadOnlyCollection<string> changedSectionNames;
 
         /// <summary>
@@ -38,11 +40,43 @@ namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
         }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="T:System.EventArgs"/> class.
+        /// </summary>
+        /// <param name="configurationSource">Configuration source that changed.</param>
+        /// <param name="container"><see cref="IServiceLocator"/> object that has been configured with the
+        /// contents of <paramref name="configurationSource"/>.</param>
+        /// <param name="changedSectionNames">Sequence of the section names in <paramref name="configurationSource"/>
+        /// that have changed.</param>
+        public ConfigurationSourceChangedEventArgs(
+            IConfigurationSource configurationSource,
+            IServiceLocator container,
+            IEnumerable<string> changedSectionNames)
+        {
+            this.configurationSource = configurationSource;
+            this.container = container;
+            this.changedSectionNames = new ReadOnlyCollection<string>(changedSectionNames.ToArray());
+        }
+
+        /// <summary>
         /// The configuration source that has changed.
         /// </summary>
         public IConfigurationSource ConfigurationSource
         {
             get { return configurationSource; }
+        }
+
+        /// <summary>
+        /// The container that has been configured with the new
+        /// configuration.
+        /// </summary>
+        /// <remarks>If this event is received directly from a 
+        /// <see cref="IConfigurationSource"/> this property will
+        /// be null. Otherwise it will reference a valid container
+        /// that has been configured with the contents of the updated
+        /// configuration source.</remarks>
+        public IServiceLocator Container
+        {
+            get { return container; }
         }
 
         /// <summary>
