@@ -6,7 +6,7 @@
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Security.Cryptography</RootNamespace>
     <PackageId>EnterpriseLibrary.Security.Cryptography.NetCore</PackageId>
     <Title>Enterprise Library 5.0 - Cryptography Application Block for .Net Core</Title>
-    <PackageVersion>5.0.505</PackageVersion>
+    <PackageVersion>5.0.506</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The Enterprise Library Cryptography Application Block simplifies the ways to incorporate cryptographic functionality in applications. This library contains a class library that targets .Net Core 2.0.</Description>
     <PackageTags>entlib Enterprise Library security crypto cryptography encryption LOB NetCore</PackageTags>
@@ -14,9 +14,9 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>5.0.505.0</Version>
+    <Version>5.0.506.0</Version>
     <AssemblyVersion>5.0.505.0</AssemblyVersion>
-    <FileVersion>5.0.505.0</FileVersion>
+    <FileVersion>5.0.506.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

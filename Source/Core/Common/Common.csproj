@@ -7,7 +7,7 @@
 
     <PackageId>EnterpriseLibrary.Common.NetCore</PackageId>
     <Title>Enterprise Library - Common Infrastructure for .Net Core</Title>
-    <PackageVersion>6.0.1305</PackageVersion>
+    <PackageVersion>6.0.1306</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The Enterprise Library Common assembly contains elements that are shared among multiple application blocks. By supplying a set of commonly used functions to all the application blocks, the Common assembly reduces the dependency of one application block on another. This library contains a class library that targets .Net Core 2.0.</Description>
     <PackageTags>entlib entlib6 Enterprise Library common core LOB NetCore</PackageTags>
@@ -15,9 +15,9 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>6.0.1305</Version>
+    <Version>6.0.1306</Version>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
-    <FileVersion>6.0.1305.0</FileVersion>
+    <FileVersion>6.0.1306.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
