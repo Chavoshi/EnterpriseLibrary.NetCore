@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Microsoft.Practices.EnterpriseLibrary.SemanticLogging.EventSourceAnalyzer</AssemblyName>
+    <RootNamespace>Microsoft.Practices.EnterpriseLibrary.SemanticLogging.EventSourceAnalyzer</RootNamespace>
+
+    <PackageId>EnterpriseLibrary.SemanticLogging.EventSourceAnalyzer.NetCore</PackageId>
+    <Title>Semantic Logging Application Block - EventSource Analyzer for .Net Core</Title>
+    <PackageVersion>2.0.1406.1</PackageVersion>
+    <Authors>Mohammad Chavoshi</Authors>
+    <Description>The EventSource Analyzer is part of the Semantic Logging Application Block. It can be incorporated into your automated tests to help validate your EventSource instances. This library contains a class library that targets .Net Core 2.0.</Description>
+    <PackageTags>slab semantic logging EventSource analyzer test testing NetCore</PackageTags>
+    <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
+    <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>2.0.1406.1</Version>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.1406.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SemanticLogging\SemanticLogging.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(OutDir)*.*&quot; &quot;$(SolutionDir)..\Build\$(ConfigurationName)\&quot; /s /i /y /d" />
+  </Target>
+
+</Project>

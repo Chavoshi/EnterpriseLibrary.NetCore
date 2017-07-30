@@ -45,13 +45,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Caching.Database", "Caching
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transient Fault Handling Application Block", "Transient Fault Handling Application Block", "{66B030BD-13B8-45D6-9AC8-35EAEC7165F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientFaultHandling", "Transient Fault Handling Application Block\TransientFaultHandling\TransientFaultHandling.csproj", "{19BEFF33-A451-4319-AA64-8EB3B8EF5641}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransientFaultHandling", "Transient Fault Handling Application Block\TransientFaultHandling\TransientFaultHandling.csproj", "{19BEFF33-A451-4319-AA64-8EB3B8EF5641}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientFaultHandling.Caching", "Transient Fault Handling Application Block\TransientFaultHandling.Caching\TransientFaultHandling.Caching.csproj", "{ACFAE28D-163B-448C-ABC4-BA57A02556F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransientFaultHandling.Caching", "Transient Fault Handling Application Block\TransientFaultHandling.Caching\TransientFaultHandling.Caching.csproj", "{ACFAE28D-163B-448C-ABC4-BA57A02556F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientFaultHandling.Data", "Transient Fault Handling Application Block\TransientFaultHandling.Data\TransientFaultHandling.Data.csproj", "{B92C5C34-8685-4743-89E9-27FD034B7AC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransientFaultHandling.Data", "Transient Fault Handling Application Block\TransientFaultHandling.Data\TransientFaultHandling.Data.csproj", "{B92C5C34-8685-4743-89E9-27FD034B7AC2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransientFaultHandling.Configuration", "Transient Fault Handling Application Block\TransientFaultHandling.Configuration\TransientFaultHandling.Configuration.csproj", "{09242E89-03A0-42FB-9D66-D9C7DE290D3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Semantic Logging Application Block", "Semantic Logging Application Block", "{5AE6BB07-BDFF-437C-9D97-BC2C0E990534}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticLogging", "Semantic Logging Application Block\SemanticLogging\SemanticLogging.csproj", "{36C31FE5-4F5A-4A92-AFDD-C78722592C75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticLogging.Database", "Semantic Logging Application Block\SemanticLogging.Database\SemanticLogging.Database.csproj", "{DA33AEAA-3559-4775-B948-1FE679E702BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticLogging.EventSourceAnalyzer", "Semantic Logging Application Block\SemanticLogging.EventSourceAnalyzer\SemanticLogging.EventSourceAnalyzer.csproj", "{9B58C5CE-CC96-4E25-BBE8-13DB28540A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticLogging.TextFile", "Semantic Logging Application Block\SemanticLogging.TextFile\SemanticLogging.TextFile.csproj", "{53235734-E63D-4D76-8830-F322A3E8B0D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +133,22 @@ Global
 		{09242E89-03A0-42FB-9D66-D9C7DE290D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09242E89-03A0-42FB-9D66-D9C7DE290D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09242E89-03A0-42FB-9D66-D9C7DE290D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C31FE5-4F5A-4A92-AFDD-C78722592C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C31FE5-4F5A-4A92-AFDD-C78722592C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C31FE5-4F5A-4A92-AFDD-C78722592C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C31FE5-4F5A-4A92-AFDD-C78722592C75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA33AEAA-3559-4775-B948-1FE679E702BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA33AEAA-3559-4775-B948-1FE679E702BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA33AEAA-3559-4775-B948-1FE679E702BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA33AEAA-3559-4775-B948-1FE679E702BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B58C5CE-CC96-4E25-BBE8-13DB28540A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B58C5CE-CC96-4E25-BBE8-13DB28540A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B58C5CE-CC96-4E25-BBE8-13DB28540A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B58C5CE-CC96-4E25-BBE8-13DB28540A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53235734-E63D-4D76-8830-F322A3E8B0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53235734-E63D-4D76-8830-F322A3E8B0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53235734-E63D-4D76-8830-F322A3E8B0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53235734-E63D-4D76-8830-F322A3E8B0D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +170,10 @@ Global
 		{ACFAE28D-163B-448C-ABC4-BA57A02556F9} = {66B030BD-13B8-45D6-9AC8-35EAEC7165F4}
 		{B92C5C34-8685-4743-89E9-27FD034B7AC2} = {66B030BD-13B8-45D6-9AC8-35EAEC7165F4}
 		{09242E89-03A0-42FB-9D66-D9C7DE290D3D} = {66B030BD-13B8-45D6-9AC8-35EAEC7165F4}
+		{36C31FE5-4F5A-4A92-AFDD-C78722592C75} = {5AE6BB07-BDFF-437C-9D97-BC2C0E990534}
+		{DA33AEAA-3559-4775-B948-1FE679E702BC} = {5AE6BB07-BDFF-437C-9D97-BC2C0E990534}
+		{9B58C5CE-CC96-4E25-BBE8-13DB28540A88} = {5AE6BB07-BDFF-437C-9D97-BC2C0E990534}
+		{53235734-E63D-4D76-8830-F322A3E8B0D3} = {5AE6BB07-BDFF-437C-9D97-BC2C0E990534}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D33D36F1-68F5-4C14-BBC4-32E07BACF8AE}
