@@ -7,7 +7,7 @@
 
     <PackageId>EnterpriseLibrary.PolicyInjection.NetCore</PackageId>
     <Title>Enterprise Library - Policy Injection Application Block for .Net Core</Title>
-    <PackageVersion>6.0.1304</PackageVersion>
+    <PackageVersion>6.0.1310</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The Enterprise Library Policy Injection Application Block can be used to change the behavior of any .NET objects, in order to better manage crosscutting concerns for these objects. The policy injection is implemented through the Unity interception mechanism. The package includes call handlers for Logging, Validation and Exception Handling. This library contains a class library that targets .Net Core 2.0.</Description>
     <PackageTags>entlib entlib6 Enterprise Library PIAB policy injection interception aop aspect cross cutting LOB NetCore</PackageTags>
@@ -15,8 +15,9 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>6.0.1304</Version>
+    <Version>6.0.1310</Version>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <FileVersion>6.0.1310.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -28,8 +29,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0-preview2-25405-01" />
-    <PackageReference Include="Unity.Interception.NetCore" Version="4.0.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
+    <PackageReference Include="Unity.Interception.NetCore" Version="4.0.2" />
   </ItemGroup>
 
   <ItemGroup>

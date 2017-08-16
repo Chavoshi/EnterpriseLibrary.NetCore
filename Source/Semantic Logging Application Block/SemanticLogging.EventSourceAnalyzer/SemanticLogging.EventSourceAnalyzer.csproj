@@ -7,7 +7,7 @@
 
     <PackageId>EnterpriseLibrary.SemanticLogging.EventSourceAnalyzer.NetCore</PackageId>
     <Title>Semantic Logging Application Block - EventSource Analyzer for .Net Core</Title>
-    <PackageVersion>2.0.1406.1</PackageVersion>
+    <PackageVersion>2.0.1406.2</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The EventSource Analyzer is part of the Semantic Logging Application Block. It can be incorporated into your automated tests to help validate your EventSource instances. This library contains a class library that targets .Net Core 2.0.</Description>
     <PackageTags>slab semantic logging EventSource analyzer test testing NetCore</PackageTags>
@@ -15,9 +15,9 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>2.0.1406.1</Version>
+    <Version>2.0.1406.2</Version>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.1406.1</FileVersion>
+    <FileVersion>2.0.1406.2</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

@@ -7,7 +7,7 @@
 
     <PackageId>EnterpriseLibrary.SemanticLogging.NetCore</PackageId>
     <Title>Semantic Logging Application Block for .Net Core</Title>
-    <PackageVersion>2.0.1406.1</PackageVersion>
+    <PackageVersion>2.0.1406.2</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The Semantic Logging Application Block provides a set of destinations (sinks) to persist application events published using a subclass of the EventSource class from the System.Diagnostics.Tracing namespace. Sinks include Azure table storage, SQL Server databases, file, console and rolling files with several formats and you can extend the block by creating your own custom formatters and sinks. The console sink is part of this nuget package. Other Sinks mentioned above are available as separate nuget packages. For the sinks that can store structured data, the block preserves the full structure of the event payload in order to facilitate analysing or processing the logged data. This library contains a class library that targets .Net Core 2.0.</Description>
     <PackageTags>entlib entlib6 slab enterprise library semantic logging EventSource event listener structured strongly-typed block futures OSS NetCore</PackageTags>
@@ -15,9 +15,9 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>2.0.1406.1</Version>
+    <Version>2.0.1406.2</Version>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.1406.1</FileVersion>
+    <FileVersion>2.0.1406.2</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

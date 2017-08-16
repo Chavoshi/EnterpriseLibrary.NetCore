@@ -7,7 +7,7 @@
 
     <PackageId>EnterpriseLibrary.TransientFaultHandling.Data.NetCore</PackageId>
     <Title>Enterprise Library - Transient Fault Handling Application Block - Windows Azure SQL Database Integration for .Net Core</Title>
-    <PackageVersion>6.0.1304</PackageVersion>
+    <PackageVersion>6.0.1310</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>Transient error detection strategies to use with Windows Azure SQL Database, for the Transient Fault Handling Application Block ("Topaz"). This library contains a class library that targets .Net Core 2.0.</Description>
     <PackageTags>entlib entlib6 enterprise library elazure Windows Azure block cloud retry retries transient fault exception handling failure network topaz async SQL database sqlazure NetCore</PackageTags>
@@ -15,12 +15,13 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>6.0.1304</Version>
+    <Version>6.0.1310</Version>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <FileVersion>6.0.1310.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.4.0-preview2-25405-01" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.4.0" />
   </ItemGroup>
 
   <ItemGroup>

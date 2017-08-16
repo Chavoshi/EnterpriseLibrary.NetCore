@@ -6,7 +6,7 @@
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Caching</RootNamespace>
     <PackageId>EnterpriseLibrary.Caching.NetCore</PackageId>
     <Title>Enterprise Library 5.0 - Caching Application Block for .Net Core</Title>
-    <PackageVersion>5.0.506</PackageVersion>
+    <PackageVersion>5.0.510</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The Enterprise Library Caching Application Block lets developers incorporate a local in-memory or persistent cache in their applications. This library contains a class library that targets .Net Core 2.0.</Description>
     <PackageTags>entlib Enterprise Library caching cache LOB NetCore</PackageTags>
@@ -14,13 +14,13 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>5.0.506.0</Version>
+    <Version>5.0.510.0</Version>
     <AssemblyVersion>5.0.505.0</AssemblyVersion>
-    <FileVersion>5.0.506.0</FileVersion>
+    <FileVersion>5.0.510.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Security.Permissions" Version="4.4.0-preview2-25405-01" />
+    <PackageReference Include="System.Security.Permissions" Version="4.4.0" />
   </ItemGroup>
 
   <ItemGroup>
