@@ -1,31 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Microsoft.Practices.EnterpriseLibrary.ExceptionHandling</AssemblyName>
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.ExceptionHandling</RootNamespace>
 
     <PackageId>EnterpriseLibrary.ExceptionHandling.NetCore</PackageId>
-    <Title>Enterprise Library - Exception Handling Application Block for .Net Core</Title>
-    <PackageVersion>6.0.1310</PackageVersion>
+    <Title>Enterprise Library - Exception Handling Application Block for for .Net Core &amp; .Net Standard</Title>
+    <PackageVersion>6.0.1311</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
-    <Description>The Enterprise Library Exception Handling Application Block helps developers create a consistent strategy for processing exceptions that occur in various architectural layers of an enterprise application. This library contains a class library that targets .Net Core 2.0.</Description>
-    <PackageTags>entlib entlib6 Enterprise Library exception handling management ehab error eab LOB NetCore</PackageTags>
-    <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <Description>The Enterprise Library Exception Handling Application Block helps developers create a consistent strategy for processing exceptions that occur in various architectural layers of an enterprise application. This library contains a class library that targets .Net Core 2.0 &amp; .Net Standard 2.0.</Description>
+    <PackageTags>entlib entlib6 Enterprise Library exception handling management ehab error eab LOB NetCore NetStandard</PackageTags>
+    <PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>6.0.1310</Version>
+    <Version>6.0.1311</Version>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
-    <FileVersion>6.0.1310.0</FileVersion>
+    <FileVersion>6.0.1311.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp2.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard2.0\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

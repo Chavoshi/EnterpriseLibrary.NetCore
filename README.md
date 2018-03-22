@@ -1,4 +1,4 @@
-# Enterprise Library for .Net Core 2.0
+# Enterprise Library for .Net Core 2.0 & .Net Standard 2.0
 
 ## Enterprise Library Overwiew
 
@@ -16,7 +16,7 @@ The design of application blocks encapsulates the Microsoft recommended and prov
 * **Ease of use:** Enterprise Library offers numerous usability improvements, including a graphical configuration tool, a simpler installation procedure, and clearer and more complete documentation and samples.
 * **Integration:** Enterprise Library application blocks are designed to work well together or individually.
 
-## Ported Libraries and Application Blocks to .Net Core 2.0:
+## Ported Libraries and Application Blocks to .Net Core 2.0 & .Net Standard 2.0:
 
 * [Common Infrastructure](https://www.nuget.org/packages/EnterpriseLibrary.Common.NetCore/)
 * [Exception Handling Application Block](https://www.nuget.org/packages/EnterpriseLibrary.ExceptionHandling.NetCore/)

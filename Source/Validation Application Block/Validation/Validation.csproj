@@ -1,32 +1,36 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Validation</AssemblyName>
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Validation</RootNamespace>
 
     <PackageId>EnterpriseLibrary.Validation.NetCore</PackageId>
-    <Title>Enterprise Library - Validation Application Block for .Net Core</Title>
-    <PackageVersion>6.0.1310</PackageVersion>
+    <Title>Enterprise Library - Validation Application Block for for .Net Core &amp; .Net Standard</Title>
+    <PackageVersion>6.0.1311</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
-    <Description>The Enterprise Library Validation Application Block provides useful features that allow developers to implement structured and easy-to-maintain validation scenarios in their applications. This library contains a class library that targets .Net Core 2.0.</Description>
-    <PackageTags>entlib entlib6 Enterprise Library validation validator vab LOB NetCore</PackageTags>
-    <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <Description>The Enterprise Library Validation Application Block provides useful features that allow developers to implement structured and easy-to-maintain validation scenarios in their applications. This library contains a class library that targets .Net Core 2.0 &amp; .Net Standard 2.0.</Description>
+    <PackageTags>entlib entlib6 Enterprise Library validation validator vab LOB NetCore NetStandard</PackageTags>
+    <PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>6.0.1310</Version>
+    <Version>6.0.1311</Version>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
-    <FileVersion>6.0.1310.0</FileVersion>
+    <FileVersion>6.0.1311.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.0\Microsoft.Practices.EnterpriseLibrary.Validation.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard2.0\Microsoft.Practices.EnterpriseLibrary.Validation.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp2.0\Microsoft.Practices.EnterpriseLibrary.Validation.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\Microsoft.Practices.EnterpriseLibrary.Validation.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Common\Common.csproj" />

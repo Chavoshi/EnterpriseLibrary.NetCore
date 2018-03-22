@@ -1,23 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Microsoft.Practices.EnterpriseLibrary.SemanticLogging.TextFile</AssemblyName>
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.SemanticLogging.TextFile</RootNamespace>
 
     <PackageId>EnterpriseLibrary.SemanticLogging.TextFile.NetCore</PackageId>
-    <Title>Semantic Logging Application Block - Text File Sinks for .Net Core</Title>
-    <PackageVersion>2.0.1406.2</PackageVersion>
+    <Title>Semantic Logging Application Block - Text File Sinks for for .Net Core &amp; .Net Standard</Title>
+    <PackageVersion>2.0.1406.3</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
-    <Description>The Semantic Logging Application Block provides a set of destinations to persist events published by a subclass of EventSource, This add-on packages adds support to persisting log entries into rolling text files and simple text files. This library contains a class library that targets .Net Core 2.0.</Description>
-    <PackageTags>slab semantic logging EventSource rolling file text sink NetCore</PackageTags>
-    <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <Description>The Semantic Logging Application Block provides a set of destinations to persist events published by a subclass of EventSource, This add-on packages adds support to persisting log entries into rolling text files and simple text files. This library contains a class library that targets .Net Core 2.0 &amp; .Net Standard 2.0.</Description>
+    <PackageTags>slab semantic logging EventSource rolling file text sink NetCore NetStandard</PackageTags>
+    <PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>2.0.1406.2</Version>
+    <Version>2.0.1406.3</Version>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.1406.2</FileVersion>
+    <FileVersion>2.0.1406.3</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,37 +1,37 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Common</AssemblyName>
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Common</RootNamespace>
 
     <PackageId>EnterpriseLibrary.Common.NetCore</PackageId>
-    <Title>Enterprise Library - Common Infrastructure for .Net Core</Title>
-    <PackageVersion>6.0.1310</PackageVersion>
+    <Title>Enterprise Library - Common Infrastructure for for .Net Core &amp; .Net Standard</Title>
+    <PackageVersion>6.0.1311</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
-    <Description>The Enterprise Library Common assembly contains elements that are shared among multiple application blocks. By supplying a set of commonly used functions to all the application blocks, the Common assembly reduces the dependency of one application block on another. This library contains a class library that targets .Net Core 2.0.</Description>
-    <PackageTags>entlib entlib6 Enterprise Library common core LOB NetCore</PackageTags>
-    <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <Description>The Enterprise Library Common assembly contains elements that are shared among multiple application blocks. By supplying a set of commonly used functions to all the application blocks, the Common assembly reduces the dependency of one application block on another. This library contains a class library that targets .Net Core 2.0 &amp; .Net Standard 2.0.</Description>
+    <PackageTags>entlib entlib6 Enterprise Library common core LOB NetCore NetStandard</PackageTags>
+    <PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>6.0.1310</Version>
+    <Version>6.0.1311</Version>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
-    <FileVersion>6.0.1310.0</FileVersion>
+    <FileVersion>6.0.1311.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.0\Microsoft.Practices.EnterpriseLibrary.Common.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard2.0\Microsoft.Practices.EnterpriseLibrary.Common.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp2.0\Microsoft.Practices.EnterpriseLibrary.Common.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\Microsoft.Practices.EnterpriseLibrary.Common.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Win32.Registry" Version="4.4.0" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
-    <PackageReference Include="Unity.Interception.NetCore" Version="4.0.2" />
+    <PackageReference Include="Unity.Interception.NetCore" Version="4.0.3" />
   </ItemGroup>
 
   <ItemGroup>
