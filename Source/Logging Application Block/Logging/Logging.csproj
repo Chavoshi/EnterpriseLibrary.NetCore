@@ -7,7 +7,7 @@
 
     <PackageId>EnterpriseLibrary.Logging.NetCore</PackageId>
     <Title>Enterprise Library - Logging Application Block for for .Net Core &amp; .Net Standard</Title>
-    <PackageVersion>6.0.1311</PackageVersion>
+    <PackageVersion>6.0.1312</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The Enterprise Library Logging Application Block simplifies logging to various destinations (file, database, event log, etc.) and tracing. This library contains a class library that targets .Net Core 2.0 &amp; .Net Standard 2.0.</Description>
     <PackageTags>entlib entlib6 Enterprise Library logging lab tracing LOB NetCore NetStandard</PackageTags>
@@ -15,9 +15,9 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>6.0.1311</Version>
+    <Version>6.0.1312</Version>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
-    <FileVersion>6.0.1311.0</FileVersion>
+    <FileVersion>6.0.1312.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

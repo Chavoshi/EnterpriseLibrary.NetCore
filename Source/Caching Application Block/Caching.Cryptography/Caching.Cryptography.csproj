@@ -6,7 +6,7 @@
     <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography</RootNamespace>
     <PackageId>EnterpriseLibrary.Caching.Cryptography.NetCore</PackageId>
     <Title>Enterprise Library 5.0 - Caching Application Block Cryptography Provider for for .Net Core &amp; .Net Standard</Title>
-    <PackageVersion>5.0.511</PackageVersion>
+    <PackageVersion>5.0.512</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The Enterprise Library Caching Cryptography Provider lets developers encrypt the data to be cached. This library contains a class library that targets .Net Core 2.0 &amp; .Net Standard 2.0.</Description>
     <PackageTags>entlib Enterprise Library caching cache database crypto cryptography security LOB NetCore NetStandard</PackageTags>
@@ -14,9 +14,9 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>5.0.511.0</Version>
+    <Version>5.0.512.0</Version>
     <AssemblyVersion>5.0.505.0</AssemblyVersion>
-    <FileVersion>5.0.511.0</FileVersion>
+    <FileVersion>5.0.512.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

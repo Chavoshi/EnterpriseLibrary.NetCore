@@ -7,7 +7,7 @@
 
     <PackageId>EnterpriseLibrary.TransientFaultHandling.Configuration.NetCore</PackageId>
     <Title>Enterprise Library - Transient Fault Handling Application Block - Declarative Configuration Support for for .Net Core &amp; .Net Standard</Title>
-    <PackageVersion>6.0.1311</PackageVersion>
+    <PackageVersion>6.0.1312</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>This package enables configuring the Transient Fault Handling Application Block ("Topaz") using declarative configuration such as the app.config file. Configuring the block is also supported by the Enterprise Library Configuration Tool available in the Visual Studio Extensions Gallery. This library contains a class library that targets .Net Core 2.0 &amp; .Net Standard 2.0.</Description>
     <PackageTags>entlib entlib6 enterprise library elazure Windows Azure block declarative configuration topaz NetCore NetStandard</PackageTags>
@@ -15,9 +15,9 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>6.0.1311</Version>
+    <Version>6.0.1312</Version>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
-    <FileVersion>6.0.1311.0</FileVersion>
+    <FileVersion>6.0.1312.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

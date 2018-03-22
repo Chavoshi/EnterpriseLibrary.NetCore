@@ -7,7 +7,7 @@
 
     <PackageId>EnterpriseLibrary.ExceptionHandling.Logging.NetCore</PackageId>
     <Title>Enterprise Library - Exception Handling Application Block Logging Handler for for .Net Core &amp; .Net Standard</Title>
-    <PackageVersion>6.0.1311</PackageVersion>
+    <PackageVersion>6.0.1312</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>This exception handler lets you log formatted exception information in locations specified in the configuration file. This library contains a class library that targets .Net Core 2.0 &amp; .Net Standard 2.0.</Description>
     <PackageTags>entlib entlib6 Enterprise Library exception ehab error management eab logging lab handler LOB NetCore NetStandard</PackageTags>
@@ -15,9 +15,9 @@
     <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>6.0.1311</Version>
+    <Version>6.0.1312</Version>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
-    <FileVersion>6.0.1311.0</FileVersion>
+    <FileVersion>6.0.1312.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
