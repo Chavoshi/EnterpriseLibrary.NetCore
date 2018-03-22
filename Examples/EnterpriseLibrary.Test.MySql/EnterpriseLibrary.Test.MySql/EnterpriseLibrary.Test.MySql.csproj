@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="EnterpriseLibrary.Data.NetCore" Version="6.0.1311" />
+    <PackageReference Include="EnterpriseLibrary.Data.NetCore" Version="6.0.1312" />
     <PackageReference Include="MySql.Data" Version="8.0.8-dmr" />
   </ItemGroup>
 
