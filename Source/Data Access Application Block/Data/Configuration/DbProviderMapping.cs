@@ -1,19 +1,11 @@
-﻿//===============================================================================
-// Microsoft patterns & practices Enterprise Library
-// Data Access Application Block
-//===============================================================================
-// Copyright © Microsoft Corporation.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
-//===============================================================================
+﻿// Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 
 using System;
 using System.Configuration;
 using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using Microsoft.Practices.EnterpriseLibrary.Common.Configuration.Design;
 using System.ComponentModel;
+using Oracle.ManagedDataAccess.Client;
 
 namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
 {
@@ -30,7 +22,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
     /// <list type="bullet">
     /// <item>For provider name "System.Data.SqlClient", or for a provider of type <see cref="System.Data.SqlClient.SqlClientFactory"/>, the 
     /// <see cref="Microsoft.Practices.EnterpriseLibrary.Data.Sql.SqlDatabase"/> will be used.</item>
-    /// <item>For provider name "System.Data.OracleClient", or for a provider of type <see cref="System.Data.OracleClient.OracleClientFactory"/>, the 
+    /// <item>For provider name "Oracle.ManagedDataAccess.Client", or for a provider of type <see cref="OracleClientFactory"/>, the 
     /// <see cref="Microsoft.Practices.EnterpriseLibrary.Data.Oracle.OracleDatabase"/> will be used.</item>
     /// <item>In any other case, the <see cref="GenericDatabase"/> will be used.</item>
     /// </list>
@@ -51,7 +43,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
         /// <summary>
         /// Default name for the Oracle managed provider.
         /// </summary>
-        public const string DefaultOracleProviderName = "System.Data.OracleClient";
+        public const string DefaultOracleProviderName = "Oracle.ManagedDataAccess.Client";
 
         internal const string DefaultGenericProviderName = "generic";
         private const string databaseTypeProperty = "databaseType";
@@ -121,8 +113,8 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
         //[TypeConverter("Microsoft.Practices.EnterpriseLibrary.Configuration.Design.ComponentModel.Converters.SystemDataProviderConverter,  Microsoft.Practices.EnterpriseLibrary.Configuration.Design")]
         public override string Name
         {
-            get{ return base.Name; }
-            set{ base.Name = value; }
+            get { return base.Name; }
+            set { base.Name = value; }
         }
     }
 }

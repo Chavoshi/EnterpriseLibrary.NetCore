@@ -24,9 +24,9 @@ namespace System.Data.Common
     internal enum DbProvidersIndex : int
     {
         //ToDo: Missing providers in .Net Core
-        //Odbc = 0,
+        Odbc = 0,
         //OleDb,
-        OracleClient = 0,
+        OracleClient,
         SqlClient,
         DbProvidersIndexCount // As enums are 0-based index, the DbProvidersIndexCount will hold the maximum count of the enum objects;
     }
@@ -102,10 +102,10 @@ namespace System.Data.Common
     // </configSections>
     // <system.data>
     //     <DbProviderFactories>
-    //         <add name="Odbc Data Provider"         invariant="System.Data.Odbc"         support="1BF" description=".Net Framework Data Provider for Odbc"      type="System.Data.Odbc.OdbcFactory, System.Data, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%ECMA_PUBLICKEY%"/>
-    //         <add name="OleDb Data Provider"        invariant="System.Data.OleDb"        support="1BF" description=".Net Framework Data Provider for OleDb"     type="System.Data.OleDb.OleDbFactory, System.Data, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%ECMA_PUBLICKEY%"/>
-    //         <add name="OracleClient Data Provider" invariant="System.Data.OracleClient" support="1AF" description=".Net Framework Data Provider for Oracle"    type="System.Data.OracleClient.OracleFactory, System.Data.OracleClient, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%ECMA_PUBLICKEY%"/>
-    //         <add name="SqlClient Data Provider"    invariant="System.Data.SqlClient"    support="1FF" description=".Net Framework Data Provider for SqlServer" type="System.Data.SqlClient.SqlClientFactory, System.Data, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%ECMA_PUBLICKEY%"/>
+    //         <add name="Odbc Data Provider"         invariant="System.Data.Odbc"                  support="1BF" description=".Net Framework Data Provider for Odbc"      type="System.Data.Odbc.OdbcFactory, System.Data, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%ECMA_PUBLICKEY%"/>
+    //         <add name="OleDb Data Provider"        invariant="System.Data.OleDb"                 support="1BF" description=".Net Framework Data Provider for OleDb"     type="System.Data.OleDb.OleDbFactory, System.Data, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%ECMA_PUBLICKEY%"/>
+    //         <add name="OracleClient Data Provider" invariant="Oracle.ManagedDataAccess.Client"   support="1AF" description=".Net Framework Data Provider for Oracle"    type="Oracle.ManagedDataAccess.Client.OracleFactory, Oracle.ManagedDataAccess.Client, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%ECMA_PUBLICKEY%"/>
+    //         <add name="SqlClient Data Provider"    invariant="System.Data.SqlClient"             support="1FF" description=".Net Framework Data Provider for SqlServer" type="System.Data.SqlClient.SqlClientFactory, System.Data, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%ECMA_PUBLICKEY%"/>
     //     </DbProviderFactories>
     // </system.data>
     // this class is delayed created, use ConfigurationSettings.GetSection("system.data") to obtain
@@ -122,14 +122,14 @@ namespace System.Data.Common
         internal const string oledbProviderDescription = ".Net Framework Data Provider for OleDb";
 
         internal const string oracleclientProviderName = "OracleClient Data Provider";
-        internal const string oracleclientProviderNamespace = "System.Data.OracleClient";
+        internal const string oracleclientProviderNamespace = "Oracle.ManagedDataAccess.Client";
         internal const string oracleclientProviderDescription = ".Net Framework Data Provider for Oracle";
 
         internal const string sqlclientProviderName = "SqlClient Data Provider";
         internal const string sqlclientProviderDescription = ".Net Framework Data Provider for SqlServer";
 
         internal const string sqlclientPartialAssemblyQualifiedName = "System.Data.SqlClient.SqlClientFactory, System.Data,";
-        internal const string oracleclientPartialAssemblyQualifiedName = "System.Data.OracleClient.OracleClientFactory, System.Data.OracleClient,";
+        internal const string oracleclientPartialAssemblyQualifiedName = "Oracle.ManagedDataAccess.Client.OracleClientFactory, Oracle.ManagedDataAccess.Client,";
 
         public DbProviderFactoriesConfigurationHandler()
         { // V1.2.3300

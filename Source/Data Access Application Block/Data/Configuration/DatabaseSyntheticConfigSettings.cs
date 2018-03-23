@@ -1,28 +1,17 @@
-﻿//===============================================================================
-// Microsoft patterns & practices Enterprise Library
-// Data Access Application Block
-//===============================================================================
-// Copyright © Microsoft Corporation.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
-//===============================================================================
+﻿// Copyright (c) Microsoft Corporation. All rights reserved. See License.txt in the project root for license information.
 
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.Common;
-//ToDo: Incomplete
-//using System.Data.OracleClient;
 using System.Data.SqlClient;
 using System.Globalization;
 using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using Microsoft.Practices.EnterpriseLibrary.Common.Utility;
-//ToDo: Incomplete
-//using Microsoft.Practices.EnterpriseLibrary.Data.Oracle;
+using Microsoft.Practices.EnterpriseLibrary.Data.Oracle;
 using Microsoft.Practices.EnterpriseLibrary.Data.Properties;
 using Microsoft.Practices.EnterpriseLibrary.Data.Sql;
+using Oracle.ManagedDataAccess.Client;
 
 namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
 {
@@ -37,11 +26,10 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
     {
         private static readonly DbProviderMapping defaultSqlMapping =
             new DbProviderMapping(DbProviderMapping.DefaultSqlProviderName, typeof(SqlDatabase));
-        //ToDo: Incomplete
-        //#pragma warning disable 612, 618
-        //        private static readonly DbProviderMapping defaultOracleMapping =
-        //            new DbProviderMapping(DbProviderMapping.DefaultOracleProviderName, typeof(OracleDatabase));
-        //#pragma warning restore 612, 618
+#pragma warning disable 612, 618
+        private static readonly DbProviderMapping defaultOracleMapping =
+            new DbProviderMapping(DbProviderMapping.DefaultOracleProviderName, typeof(OracleDatabase));
+#pragma warning restore 612, 618
         private static readonly DbProviderMapping defaultGenericMapping =
             new DbProviderMapping(DbProviderMapping.DefaultGenericProviderName, typeof(GenericDatabase));
 
@@ -271,9 +259,8 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
             if (DbProviderMapping.DefaultSqlProviderName.Equals(dbProviderName))
                 return defaultSqlMapping;
 
-            //ToDo: Incomplete
-            //if (DbProviderMapping.DefaultOracleProviderName.Equals(dbProviderName))
-            //    return defaultOracleMapping;
+            if (DbProviderMapping.DefaultOracleProviderName.Equals(dbProviderName))
+                return defaultOracleMapping;
 
             // get the default based on type
             var providerFactory = DbProviderFactories.GetFactory(dbProviderName);
@@ -281,11 +268,10 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
             if (SqlClientFactory.Instance == providerFactory)
                 return defaultSqlMapping;
 
-            //ToDo: Incomplete
-            //#pragma warning disable 612, 618
-            //            if (OracleClientFactory.Instance == providerFactory)
-            //                return defaultOracleMapping;
-            //#pragma warning restore 612, 618
+#pragma warning disable 612, 618
+            if (OracleClientFactory.Instance == providerFactory)
+                return defaultOracleMapping;
+#pragma warning restore 612, 618
 
             return null;
         }

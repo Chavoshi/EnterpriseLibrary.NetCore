@@ -51,27 +51,25 @@ namespace Microsoft.Practices.EnterpriseLibrary.Common.Configuration
         //    return new OleDbConfigurationExtension(context);
         //}
 
-        //ToDo: Incomplete
-        ///// <summary>
-        ///// An Odbc database for use with the <see cref="System.Data.Odbc"/> namespace.
-        ///// </summary>
-        ///// <returns></returns>
-        //public static IOdbcDatabaseConfiguration AnOdbcDatabase(this IDatabaseConfigurationProviders context)
-        //{
-        //    return new OdbcConfigurationExtension(context);
-        //}
+        /// <summary>
+        /// An Odbc database for use with the <see cref="System.Data.Odbc"/> namespace.
+        /// </summary>
+        /// <returns></returns>
+        public static IOdbcDatabaseConfiguration AnOdbcDatabase(this IDatabaseConfigurationProviders context)
+        {
+            return new OdbcConfigurationExtension(context);
+        }
 
-        //ToDo: Incomplete
-        /////<summary>
-        ///// An Oracle database for use with the System.Data.OracleClient namespace.
-        /////</summary>
-        /////<returns></returns>
-        /////<seealso cref="System.Data.OracleClient"/>
-        //[Obsolete("OracleDatabase has been deprecated. http://go.microsoft.com/fwlink/?LinkID=144260", false)]
-        //public static IDatabaseOracleConfiguration AnOracleDatabase(this IDatabaseConfigurationProviders context)
-        //{
-        //    return new OracleConfigurationExtension(context);
-        //}
+        ///<summary>
+        /// An Oracle database for use with the Oracle.ManagedDataAccess.Client namespace.
+        ///</summary>
+        ///<returns></returns>
+        ///<seealso cref="Oracle.ManagedDataAccess.Client"/>
+        [Obsolete("OracleDatabase has been deprecated. http://go.microsoft.com/fwlink/?LinkID=144260", false)]
+        public static IDatabaseOracleConfiguration AnOracleDatabase(this IDatabaseConfigurationProviders context)
+        {
+            return new OracleConfigurationExtension(context);
+        }
 
         ///<summary>
         /// A database with the specified database provider name.
