@@ -10,8 +10,9 @@ namespace EnterpriseLibrary.Test.MySql
     {
         static void Main(string[] args)
         {
-            TestOracle();
-            TestMySql();
+            //TestOracle();
+            //TestMySql();
+            TestMySqlDataSet();
         }
 
         private static void TestOracle()
@@ -70,6 +71,26 @@ namespace EnterpriseLibrary.Test.MySql
                     db.ExecuteNonQuery(cmd);
                 }
                 catch (Exception)
+                {
+                    throw;
+                }
+            }
+        }
+
+        private static void TestMySqlDataSet()
+        {
+            const string sqlCmd = @"Select * from City";
+
+            DatabaseFactory.SetDatabaseProviderFactory(new DatabaseProviderFactory(new SystemConfigurationSource(false).GetSection), false);
+            Database db = DatabaseFactory.CreateDatabase("BizDbMySql");
+
+            using (DbCommand cmd = db.GetSqlStringCommand(sqlCmd))
+            {
+                try
+                {
+                    var dataset = db.ExecuteDataSet(cmd);
+                }
+                catch (Exception ex)
                 {
                     throw;
                 }
