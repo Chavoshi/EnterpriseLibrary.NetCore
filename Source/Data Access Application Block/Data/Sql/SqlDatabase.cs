@@ -270,26 +270,15 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Sql
         }
 
         //ToDo: Incomplete
-        ///// <summary>
-        ///// Retrieves parameter information from the stored procedure specified in the <see cref="DbCommand"/> and populates the Parameters collection of the specified <see cref="DbCommand"/> object. 
-        ///// </summary>
-        ///// <param name="discoveryCommand">The <see cref="DbCommand"/> to do the discovery.</param>
-        ///// <remarks>The <see cref="DbCommand"/> must be a <see cref="SqlCommand"/> instance.</remarks>
-        //protected override void DeriveParameters(DbCommand discoveryCommand)
-        //{
-        //    SqlCommandBuilder.DeriveParameters((SqlCommand)discoveryCommand);
-        //}
-
         /// <summary>
-        /// This operation is not supported in this class.
+        /// Retrieves parameter information from the stored procedure specified in the <see cref="DbCommand"/> and populates the Parameters collection of the specified <see cref="DbCommand"/> object. 
         /// </summary>
         /// <param name="discoveryCommand">The <see cref="DbCommand"/> to do the discovery.</param>
-        /// <remarks>There is no generic way to do it, the operation is not implemented for <see cref="GenericDatabase"/>.</remarks>
-        /// <exception cref="NotSupportedException">Thrown whenever this method is called.</exception>
-        protected override void DeriveParameters(DbCommand discoveryCommand)
-        {
-            throw new NotSupportedException(Resources.ExceptionParameterDiscoveryNotSupportedOnGenericDatabase);
+        /// <remarks>The <see cref="DbCommand"/> must be a <see cref="SqlCommand"/> instance.</remarks>
+        protected override void DeriveParameters(DbCommand discoveryCommand) {
+            SqlCommandBuilder.DeriveParameters((SqlCommand)discoveryCommand);
         }
+
 
         /// <summary>
         /// Returns the starting index for parameters in a command.
@@ -481,7 +470,6 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Sql
             };
         }
 
-        //ToDo: Incomplete
         //private IAsyncResult DoBeginExecuteNonQuery(SqlCommand command, bool disposeCommand, AsyncCallback callback, object state)
         //{
         //    bool closeConnection = command.Transaction == null;
