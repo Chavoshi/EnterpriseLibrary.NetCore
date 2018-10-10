@@ -44,6 +44,11 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
         /// Default name for the Oracle managed provider.
         /// </summary>
         public const string DefaultOracleProviderName = "Oracle.ManagedDataAccess.Client";
+        /// <summary>
+        /// Default name for the MySqlConnector managed provider.
+        /// </summary>
+        public const string DefaultMySqlConnectorProviderName = "MySqlConnector";
+
 
         internal const string DefaultGenericProviderName = "generic";
         private const string databaseTypeProperty = "databaseType";
