@@ -9,10 +9,12 @@ using System.Globalization;
 using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using Microsoft.Practices.EnterpriseLibrary.Common.Utility;
 using Microsoft.Practices.EnterpriseLibrary.Data.MySqlConnector;
+using Microsoft.Practices.EnterpriseLibrary.Data.Npgsql;
 using Microsoft.Practices.EnterpriseLibrary.Data.Oracle;
 using Microsoft.Practices.EnterpriseLibrary.Data.Properties;
 using Microsoft.Practices.EnterpriseLibrary.Data.Sql;
 using MySql.Data.MySqlClient;
+using Npgsql;
 using Oracle.ManagedDataAccess.Client;
 
 namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
@@ -33,6 +35,9 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
             new DbProviderMapping(DbProviderMapping.DefaultOracleProviderName, typeof(OracleDatabase));
 
 #pragma warning restore 612, 618
+
+        private static readonly DbProviderMapping defaultNpgsqlMapping =
+            new DbProviderMapping(DbProviderMapping.DefaultNpgsqlProviderName, typeof(NpgsqlDatabase));
 
         private static readonly DbProviderMapping defaultMySqlConnectorMapping =
             new DbProviderMapping(DbProviderMapping.DefaultMySqlConnectorProviderName, typeof(MySqlConnectorDatabase));
@@ -269,6 +274,9 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
             if (DbProviderMapping.DefaultOracleProviderName.Equals(dbProviderName))
                 return defaultOracleMapping;
 
+            if (DbProviderMapping.DefaultNpgsqlProviderName.Equals(dbProviderName))
+                return defaultNpgsqlMapping;
+
             if (DbProviderMapping.DefaultMySqlConnectorProviderName.Equals(dbProviderName))
                 return defaultMySqlConnectorMapping;
 
@@ -282,6 +290,9 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
             if (OracleClientFactory.Instance == providerFactory)
                 return defaultOracleMapping;
 #pragma warning restore 612, 618
+
+            if (NpgsqlFactory.Instance == providerFactory)
+                return defaultNpgsqlMapping;
 
             if (MySqlClientFactory.Instance == providerFactory)
                 return defaultMySqlConnectorMapping;

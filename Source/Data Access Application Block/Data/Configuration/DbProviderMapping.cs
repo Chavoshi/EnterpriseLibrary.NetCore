@@ -48,6 +48,10 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
         /// Default name for the MySqlConnector managed provider.
         /// </summary>
         public const string DefaultMySqlConnectorProviderName = "MySqlConnector";
+        /// <summary>
+        /// Default name for the Npgsql managed provider.
+        /// </summary>
+        public const string DefaultNpgsqlProviderName = "Npgsql";
 
 
         internal const string DefaultGenericProviderName = "generic";
