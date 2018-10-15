@@ -32,7 +32,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.MySqlConnector {
     public class MySqlConnectorDatabase : Database
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="SqlDatabase"/> class with a connection string.
+        /// Initializes a new instance of the <see cref="MySqlConnectorDatabase"/> class with a connection string.
         /// </summary>
         /// <param name="connectionString">The connection string.</param>
         public MySqlConnectorDatabase(string connectionString)
@@ -61,7 +61,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.MySqlConnector {
         }
 
         /// <summary>
-        /// <para>Executes the <see cref="SqlCommand"/> and returns a new <see cref="XmlReader"/>.</para>
+        /// <para>Executes the <see cref="MySqlCommand"/> and returns a new <see cref="XmlReader"/>.</para>
         /// </summary>
         /// <remarks>
         ///	When the returned reader is closed, the underlying connection will be closed
@@ -69,7 +69,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.MySqlConnector {
         /// This is a behavior change from Enterprise Library versions prior to v5.
         /// </remarks>
         /// <param name="command">
-        /// <para>The <see cref="SqlCommand"/> to execute.</para>
+        /// <para>The <see cref="MySqlCommand"/> to execute.</para>
         /// </param>
         /// <returns>
         /// <para>An <see cref="XmlReader"/> object.</para>
@@ -87,7 +87,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.MySqlConnector {
         }
 
         /// <summary>
-        /// <para>Executes the <see cref="SqlCommand"/> in a transaction and returns a new <see cref="XmlReader"/>.</para>
+        /// <para>Executes the <see cref="MySqlCommand"/> in a transaction and returns a new <see cref="XmlReader"/>.</para>
         /// </summary>
         /// <remarks>
         ///		Unlike other Execute... methods that take a <see cref="DbCommand"/> instance, this method
@@ -96,7 +96,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.MySqlConnector {
         ///		command.Connection.Close() method.
         /// </remarks>
         /// <param name="command">
-        /// <para>The <see cref="SqlCommand"/> to execute.</para>
+        /// <para>The <see cref="MySqlCommand"/> to execute.</para>
         /// </param>
         /// <param name="transaction">
         /// <para>The <see cref="IDbTransaction"/> to execute the command within.</para>
@@ -275,7 +275,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.MySqlConnector {
         /// Retrieves parameter information from the stored procedure specified in the <see cref="DbCommand"/> and populates the Parameters collection of the specified <see cref="DbCommand"/> object. 
         /// </summary>
         /// <param name="discoveryCommand">The <see cref="DbCommand"/> to do the discovery.</param>
-        /// <remarks>The <see cref="DbCommand"/> must be a <see cref="SqlCommand"/> instance.</remarks>
+        /// <remarks>The <see cref="DbCommand"/> must be a <see cref="MySqlCommand"/> instance.</remarks>
         protected override void DeriveParameters(DbCommand discoveryCommand) {
             MySqlCommandBuilder.DeriveParameters((MySqlCommand)discoveryCommand);
         }
@@ -969,7 +969,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.MySqlConnector {
         /// <para>Initiates the asynchronous execution of a <paramref name="command"/> which will return a single value.</para>
         /// </summary>
         /// <param name="command">
-        /// <para>The <see cref="SqlCommand"/> to execute.</para>
+        /// <para>The <see cref="MySqlCommand"/> to execute.</para>
         /// </param>
         /// <param name="callback">The async callback to execute when the result of the operation is available. Pass <langword>null</langword>
         /// if you don't want to use a callback.</param>
@@ -990,7 +990,7 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.MySqlConnector {
         /// <para>Initiates the asynchronous execution of a <paramref name="command"/> inside a transaction which will return a single value.</para>
         /// </summary>
         /// <param name="command">
-        /// <para>The <see cref="SqlCommand"/> to execute.</para>
+        /// <para>The <see cref="MySqlCommand"/> to execute.</para>
         /// </param>
         /// <param name="transaction">
         /// <para>The <see cref="DbTransaction"/> to execute the command within.</para>
