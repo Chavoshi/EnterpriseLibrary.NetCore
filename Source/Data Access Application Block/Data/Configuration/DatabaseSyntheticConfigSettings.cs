@@ -8,9 +8,11 @@ using System.Data.SqlClient;
 using System.Globalization;
 using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
 using Microsoft.Practices.EnterpriseLibrary.Common.Utility;
+using Microsoft.Practices.EnterpriseLibrary.Data.MySqlConnector;
 using Microsoft.Practices.EnterpriseLibrary.Data.Oracle;
 using Microsoft.Practices.EnterpriseLibrary.Data.Properties;
 using Microsoft.Practices.EnterpriseLibrary.Data.Sql;
+using MySql.Data.MySqlClient;
 using Oracle.ManagedDataAccess.Client;
 
 namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
@@ -29,7 +31,12 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
 #pragma warning disable 612, 618
         private static readonly DbProviderMapping defaultOracleMapping =
             new DbProviderMapping(DbProviderMapping.DefaultOracleProviderName, typeof(OracleDatabase));
+
 #pragma warning restore 612, 618
+
+        private static readonly DbProviderMapping defaultMySqlConnectorMapping =
+            new DbProviderMapping(DbProviderMapping.DefaultMySqlConnectorProviderName, typeof(MySqlConnectorDatabase));
+
         private static readonly DbProviderMapping defaultGenericMapping =
             new DbProviderMapping(DbProviderMapping.DefaultGenericProviderName, typeof(GenericDatabase));
 
@@ -262,6 +269,9 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
             if (DbProviderMapping.DefaultOracleProviderName.Equals(dbProviderName))
                 return defaultOracleMapping;
 
+            if (DbProviderMapping.DefaultMySqlConnectorProviderName.Equals(dbProviderName))
+                return defaultMySqlConnectorMapping;
+
             // get the default based on type
             var providerFactory = DbProviderFactories.GetFactory(dbProviderName);
 
@@ -272,6 +282,9 @@ namespace Microsoft.Practices.EnterpriseLibrary.Data.Configuration
             if (OracleClientFactory.Instance == providerFactory)
                 return defaultOracleMapping;
 #pragma warning restore 612, 618
+
+            if (MySqlClientFactory.Instance == providerFactory)
+                return defaultMySqlConnectorMapping;
 
             return null;
         }
