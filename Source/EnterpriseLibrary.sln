@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26711.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{1F8778F4-BAC4-4A09-92E7-CDACD74927A2}"
 EndProject
@@ -57,11 +57,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Semantic Logging Applicatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticLogging", "Semantic Logging Application Block\SemanticLogging\SemanticLogging.csproj", "{36C31FE5-4F5A-4A92-AFDD-C78722592C75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticLogging.Database", "Semantic Logging Application Block\SemanticLogging.Database\SemanticLogging.Database.csproj", "{DA33AEAA-3559-4775-B948-1FE679E702BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticLogging.Database", "Semantic Logging Application Block\SemanticLogging.Database\SemanticLogging.Database.csproj", "{DA33AEAA-3559-4775-B948-1FE679E702BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticLogging.EventSourceAnalyzer", "Semantic Logging Application Block\SemanticLogging.EventSourceAnalyzer\SemanticLogging.EventSourceAnalyzer.csproj", "{9B58C5CE-CC96-4E25-BBE8-13DB28540A88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticLogging.EventSourceAnalyzer", "Semantic Logging Application Block\SemanticLogging.EventSourceAnalyzer\SemanticLogging.EventSourceAnalyzer.csproj", "{9B58C5CE-CC96-4E25-BBE8-13DB28540A88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemanticLogging.TextFile", "Semantic Logging Application Block\SemanticLogging.TextFile\SemanticLogging.TextFile.csproj", "{53235734-E63D-4D76-8830-F322A3E8B0D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemanticLogging.TextFile", "Semantic Logging Application Block\SemanticLogging.TextFile\SemanticLogging.TextFile.csproj", "{53235734-E63D-4D76-8830-F322A3E8B0D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.AspNetCore", "Logging.AspNetCore\Logging.AspNetCore.csproj", "{624CBE12-1237-4DEB-9CA8-8DB2B3B5421C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +151,10 @@ Global
 		{53235734-E63D-4D76-8830-F322A3E8B0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53235734-E63D-4D76-8830-F322A3E8B0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53235734-E63D-4D76-8830-F322A3E8B0D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{624CBE12-1237-4DEB-9CA8-8DB2B3B5421C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{624CBE12-1237-4DEB-9CA8-8DB2B3B5421C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{624CBE12-1237-4DEB-9CA8-8DB2B3B5421C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{624CBE12-1237-4DEB-9CA8-8DB2B3B5421C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -174,6 +180,7 @@ Global
 		{DA33AEAA-3559-4775-B948-1FE679E702BC} = {5AE6BB07-BDFF-437C-9D97-BC2C0E990534}
 		{9B58C5CE-CC96-4E25-BBE8-13DB28540A88} = {5AE6BB07-BDFF-437C-9D97-BC2C0E990534}
 		{53235734-E63D-4D76-8830-F322A3E8B0D3} = {5AE6BB07-BDFF-437C-9D97-BC2C0E990534}
+		{624CBE12-1237-4DEB-9CA8-8DB2B3B5421C} = {97B4A3BB-2E3A-4276-A7F3-1300A0AD6D9D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D33D36F1-68F5-4C14-BBC4-32E07BACF8AE}

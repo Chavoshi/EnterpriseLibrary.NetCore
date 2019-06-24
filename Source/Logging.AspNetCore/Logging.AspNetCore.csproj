@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Microsoft.Practices.EnterpriseLibrary.Logging.AspNetCore</AssemblyName>
+    <RootNamespace>Microsoft.Practices.EnterpriseLibrary.Logging.AspNetCore</RootNamespace>
+    <PackageId>EnterpriseLibrary.Logging.NetCore.AspNetCore</PackageId>
+    <Version>6.0.1312</Version>
+    <Authors>Alessandro Chiavegato</Authors>
+    <Company>Alessandro Chiavegato</Company>
+    <Description>The Enterprise Library Logging integration for ASP.NET Core 2+</Description>
+    <PackageProjectUrl>https://github.com/Chavoshi/EnterpriseLibrary.NetCore</PackageProjectUrl>
+    <PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <PackageTags>entlib entlib6 Enterprise Library logging lab tracing LOB NetCore NetStandard</PackageTags>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Common\Common.csproj" />
+    <ProjectReference Include="..\Logging Application Block\Logging\Logging.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(OutDir)*.*&quot; &quot;$(SolutionDir)..\Build\$(ConfigurationName)\&quot; /s /i /y /d" />
+  </Target>
+
+</Project>
