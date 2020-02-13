@@ -14,6 +14,7 @@ using System.Collections;
 using System.Collections.Specialized;
 using System.Globalization;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Security;
 using System.Security.Principal;
 using System.Threading;
@@ -90,7 +91,10 @@ namespace Microsoft.Practices.EnterpriseLibrary.ExceptionHandling
                     this.additionalInfo.Add("FullName", Assembly.GetExecutingAssembly().FullName);
                     this.additionalInfo.Add("AppDomainName", AppDomain.CurrentDomain.FriendlyName);
                     this.additionalInfo.Add("ThreadIdentity", GetThreadIdentity());
-                    this.additionalInfo.Add("WindowsIdentity", GetWindowsIdentity());
+                    if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+                    {
+                        this.additionalInfo.Add("WindowsIdentity", GetWindowsIdentity());
+                    }
                 }
 
                 return this.additionalInfo;

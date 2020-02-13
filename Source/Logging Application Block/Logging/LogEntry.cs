@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 using System.Security;
 using System.Security.Permissions;
@@ -805,21 +806,42 @@ namespace Microsoft.Practices.EnterpriseLibrary.Logging
         [SecurityCritical]
         private static string GetProcessName()
         {
-            StringBuilder buffer = new StringBuilder(1024);
-            int length = NativeMethods.GetModuleFileName(NativeMethods.GetModuleHandle(null), buffer, buffer.Capacity);
-            return buffer.ToString();
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                StringBuilder buffer = new StringBuilder(1024);
+                int length = NativeMethods.GetModuleFileName(NativeMethods.GetModuleHandle(null), buffer, buffer.Capacity);
+                return buffer.ToString();
+            }
+            else
+            {
+                return Process.GetCurrentProcess().ProcessName.ToString(NumberFormatInfo.InvariantInfo);
+            }
         }
 
         [SecurityCritical]
         private static string GetCurrentProcessId()
         {
-            return NativeMethods.GetCurrentProcessId().ToString(NumberFormatInfo.InvariantInfo);
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                return NativeMethods.GetCurrentProcessId().ToString(NumberFormatInfo.InvariantInfo);
+            }
+            else
+            {
+                return Process.GetCurrentProcess().Id.ToString(NumberFormatInfo.InvariantInfo);
+            }
         }
 
         [SecurityCritical]
         private static string GetCurrentThreadId()
         {
-            return NativeMethods.GetCurrentThreadId().ToString(NumberFormatInfo.InvariantInfo);
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                return NativeMethods.GetCurrentThreadId().ToString(NumberFormatInfo.InvariantInfo);
+            }
+            else
+            {
+                return Thread.CurrentThread.ManagedThreadId.ToString(NumberFormatInfo.InvariantInfo);
+            }
         }
     }
 }

@@ -17,6 +17,7 @@ using System.Security;
 using System.Text;
 using Microsoft.Practices.EnterpriseLibrary.Logging.Properties;
 using System.Security.Principal;
+using System.Runtime.InteropServices;
 
 namespace Microsoft.Practices.EnterpriseLibrary.Logging
 {
@@ -190,7 +191,10 @@ namespace Microsoft.Practices.EnterpriseLibrary.Logging
             this.additionalInfo.Add("TimeStamp:", "TimeStamp: " + DateTime.UtcNow.ToString(CultureInfo.CurrentCulture));
             this.additionalInfo.Add("FullName:", "FullName: " + Assembly.GetExecutingAssembly().FullName);
             this.additionalInfo.Add("AppDomainName:", "AppDomainName: " + AppDomain.CurrentDomain.FriendlyName);
-            this.additionalInfo.Add("WindowsIdentity:", "WindowsIdentity: " + GetWindowsIdentity());
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                this.additionalInfo.Add("WindowsIdentity:", "WindowsIdentity: " + GetWindowsIdentity());
+            }
         }
 
         private static string GetWindowsIdentity()
