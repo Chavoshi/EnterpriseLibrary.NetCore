@@ -1,3 +1,5 @@
+## Project moved to https://github.com/enterpriselibrary/
+
 # Enterprise Library for .Net Core 2.0 & .Net Standard 2.0
 
 ## Enterprise Library Overwiew
